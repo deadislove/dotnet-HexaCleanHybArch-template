@@ -161,7 +161,7 @@ This encourages strong modularity, dynamic plug-in style composition, and separa
 
 - Author - [Da-Wei Lin](https://www.linkedin.com/in/da-wei-lin-689a35107/)
 - Website - [David Weblog](https://davidskyspace.com/)
-- [MIT LICENSE](https://github.com/deadislove/dotnet-ModularMonolith-template/blob/main/LICENSE)
+- [MIT LICENSE](https://github.com/deadislove/dotnet-HexaCleanHybArch-template/blob/main/LICENSE)
 
 ## 🏗️ Future Enhancements
 
