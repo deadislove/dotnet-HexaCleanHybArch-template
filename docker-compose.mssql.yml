@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  mssql-db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    restart: always
+    environment:
+      SA_PASSWORD: "YourStrong@Passw0rd"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    volumes:
+      - mssqldata:/var/opt/mssql
+
+  modularmonolith-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5000:8080"
+    depends_on:
+      - mssql-db
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - Database__Provider=MSSQL
+      - ConnectionStrings__Default=Server=mssql;Database=CleanArchDb;User Id=sa;Password=YourStrong@Passw0rd;Encrypt=True;TrustServerCertificate=True;
+
+volumes:
+  mssqldata:

@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Da-Wei Lin",
+  "classifications": [
+    "Web",
+    "Clean Architecture",
+    "Hexagonal",
+    "Modular Monolith",
+    "DDD",
+    "Backend"
+  ],
+  "name": "HexaCleanHybArch.Template",
+  "identity": "HexaCleanHybArch.Template",
+  "shortName": "hexa-clean",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "HexaCleanHybArch.Template",
+  "preferNameDirectory": true,
+  "symbols": {
+    "ProjectName": {
+      "type": "parameter",
+      "datatype": "text",
+      "replaces": "HexaCleanHybArch.Template",
+      "defaultValue": "MyModularProject",
+      "description": "The name of the root project and solution"
+    }
+  },
+  "primaryOutputs": [
+    {
+      "path": "src/HexaCleanHybArch.Template.Api/HexaCleanHybArch.Template.Api.csproj"
+    }
+  ]
+}

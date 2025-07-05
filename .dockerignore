@@ -1,0 +1,57 @@
+# Ignore build output folders
+bin/
+obj/
+
+# Ignore user-specific files
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# Ignore Visual Studio temporary files
+.vs/
+.vscode/
+
+# Ignore logs
+*.log
+
+# Ignore local environment files
+.env
+.env.*
+
+# Ignore publish output folder
+publish/
+
+# Ignore database files if any
+*.db
+*.mdf
+*.ldf
+
+# Ignore node_modules if front-end exists
+node_modules/
+
+# Ignore git
+.git
+.gitignore
+
+# Ignore NuGet packages folder
+packages/
+
+# Ignore test results
+TestResults/
+*.trx
+
+# Ignore coverage reports
+coverage/
+*.coverage
+
+# Ignore Docker files themselves (optional)
+Dockerfile
+.dockerignore
+
+# other
+.vs/
+obj/
+src/**/app.db
+src/**/app.db-shm
+src/**/app.db-wal

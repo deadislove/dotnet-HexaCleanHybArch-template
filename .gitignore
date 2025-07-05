@@ -1,0 +1,25 @@
+# .NET build folders - ignore recursively under src/
+src/**/bin/
+src/**/obj/
+src/**/logs/
+
+tests/**/bin/
+tests/**/obj/
+
+# Also ignore top-level bin/ and obj/ if any
+/bin/
+/obj/
+
+# Ignore logs anywhere (optional, if not limited to src/)
+**/logs/
+
+# Common node modules locations
+/node_modules
+/wwwroot/node_modules
+
+# other
+.vs/
+obj/
+src/**/app.db
+src/**/app.db-shm
+src/**/app.db-wal

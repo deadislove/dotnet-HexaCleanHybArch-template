@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  cleanarch-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5000:8080"
+    volumes:
+      - sqlite-data:/app
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - Database__Provider=SQLite
+      - ConnectionStrings__Default=Data Source=/app/app.db
+
+volumes:
+  sqlite-data:

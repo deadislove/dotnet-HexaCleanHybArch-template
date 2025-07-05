@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <PackageReference Include="Serilog" Version="4.3.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="6.0.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HexaCleanHybArch.Template.Core\HexaCleanHybArch.Template.Core.csproj" />
+    <ProjectReference Include="..\HexaCleanHybArch.Template.Config\HexaCleanHybArch.Template.Config.csproj" />
+    <ProjectReference Include="..\HexaCleanHybArch.Template.Shared\HexaCleanHybArch.Template.Shared.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>
