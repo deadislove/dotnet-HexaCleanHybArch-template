@@ -1,7 +1,7 @@
 # HexaCleanHybArch.Template
 
-![Visitors](https://img.shields.io/badge/visitors-74_total-brightgreen)
-![Clones](https://img.shields.io/badge/clones-21_total_15_unique-blue) <!--CLONE-BADGE-->
+![Visitors](https://img.shields.io/badge/visitors-35_total-brightgreen)
+![Clones](https://img.shields.io/badge/clones-19_total_14_unique-blue) <!--CLONE-BADGE-->
 
 A **Modular Hexagonal-Clean Hybrid Architecture** template built with **.NET 9**, designed for scalable, maintainable, and plug-in-style backend systems.
 
