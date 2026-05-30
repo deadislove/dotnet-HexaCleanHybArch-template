@@ -6,6 +6,7 @@ using HexaCleanHybArch.Template.Core.DTOs.Reqeuest.Auth;
 using HexaCleanHybArch.Template.Core.DTOs.Response.Auth;
 using HexaCleanHybArch.Template.Core.Services.Auth;
 using HexaCleanHybArch.Template.Shared.Auth;
+using HexaCleanHybArch.Template.Core.Mapping;
 using Moq;
 
 namespace HexaCleanHybArch.Template.Tests.Unit.Auth
@@ -22,8 +23,7 @@ namespace HexaCleanHybArch.Template.Tests.Unit.Auth
             _mockUserFacade = new Mock<IUserFacade>();
 
             MapperConfiguration config = new MapperConfiguration(cfg => {
-                cfg.CreateMap<UserDto, JwtUserInfo>();
-                cfg.CreateMap<RegisterCoreRequest, UserDto>();
+                cfg.AddProfile<CoreMappingProfile>();
             });
 
             _mapper = config.CreateMapper();
